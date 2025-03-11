@@ -30,24 +30,24 @@ public class MainActivity extends AppCompatActivity {
         textResult = findViewById(R.id.textResult);
     }
     private int firstNumber() {
-        return Integer.parseInt(inputFirstNumber.getText().toString());
+        return Integer.parseInt(inputFirstNumber.getText().toString());//输入第一个数字
     }
 
     private int secondNumber() {
-        return Integer.parseInt(inputSecondNumber.getText().toString());
+        return Integer.parseInt(inputSecondNumber.getText().toString());//输入第二个数字
     }
     public void AddNumbers(View view) {
-        int result = firstNumber() + secondNumber();
+        int result = firstNumber() + secondNumber();//加
         textResult.setText(String.valueOf(result));
     }
 
     public void SubtractNumbers(View view) {
-        int result = firstNumber() - secondNumber();
+        int result = firstNumber() - secondNumber();//减
         textResult.setText(String.valueOf(result));
     }
 
     public void MultiplyNumbers(View view) {
-        int result = firstNumber() * secondNumber();
+        int result = firstNumber() * secondNumber();//乘
         textResult.setText(String.valueOf(result));
     }
 
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         if (num2 == 0) {
             return;
         }
-        int result = num1 / num2; // 整数除法，直接取整
+        int result = num1 / num2; //除
         textResult.setText(String.valueOf(result));
     }
 }
